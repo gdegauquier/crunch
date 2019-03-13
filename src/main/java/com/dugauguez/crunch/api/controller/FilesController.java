@@ -7,7 +7,6 @@ import com.dugauguez.crunch.backend.utils.FilesUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import javassist.tools.web.BadHttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -15,12 +14,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.client.HttpClientErrorException;
+
+import java.io.IOException;
 
 @Controller
 @Api(value = FilesController.GROUP_FILES,
-     produces = MediaType.APPLICATION_JSON_VALUE,
-     tags = {FilesController.GROUP_FILES})
+        produces = MediaType.APPLICATION_JSON_VALUE,
+        tags = {FilesController.GROUP_FILES})
 public class FilesController {
 
     public static final String GROUP_FILES = "Files";
@@ -28,30 +28,32 @@ public class FilesController {
     @Autowired
     FilesService filesService;
 
-    @ApiOperation(value = "Get Files",
-                  nickname = "Get Files",
-                  tags = {FilesController.GROUP_FILES})
+    @ApiOperation(value = "Create Files",
+            nickname = "Create Files",
+            tags = {FilesController.GROUP_FILES})
     @GetMapping(value = Endpoints.FILES,
-                produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity<Task> getFiles(
+            produces = {MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<Task> createFiles(
 
             @ApiParam(value = "Type")
             @RequestParam(value = "type") String type,
 
-            @ApiParam(value = "Department")
-            @RequestParam(value = "department") String department,
-
             @ApiParam(value = "Year")
-            @RequestParam(value = "year") String year
+            @RequestParam(value = "year") String year,
 
-            ) {
+            @ApiParam(value = "Department")
+            @RequestParam(value = "department") String department
+
+    ) throws IOException {
 
 
-        if ( !FilesUtils.isValidType(type)){
+        if (!FilesUtils.isValidType(type)) {
             // TODO: handle badrequest
         }
 
+        // TODO: valid year
 
+        // TODO: department
 
         filesService.createFiles(type, year, department);
 
