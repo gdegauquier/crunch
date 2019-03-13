@@ -1,0 +1,7 @@
+<!-- &auditable;
+  adds automatically these 4 columns on tables creations -->
+
+<column name="created_by" type="varchar(50)" />
+<column name="created_date" type="datetime" />
+<column name="last_update_by" type="varchar(50)" />
+<column name="last_update_date" type="datetime" />

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE databaseChangeLog [
+        <!ENTITY auditable SYSTEM "../auditable.xml">
+        ]>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet author="gdegauquier" id="create-table-t-department">
+        <createTable tableName="t_department" remarks="Table contenant les departements">
+            <column name="code" type="varchar(4)">
+                <constraints nullable="false" />
+            </column>
+            <column name="name" type="varchar(50)" />
+            &auditable;
+        </createTable>
+
+        <addPrimaryKey tableName="t_department" constraintName="t_department_pk"
+                       columnNames="code" />
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE databaseChangeLog [
+        <!ENTITY auditable SYSTEM "../auditable.xml">
+        ]>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet author="gdegauquier" id="insert-departments-codes">
+
+        <sql> insert into t_department (code, created_by, created_date) values ( '001', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '002', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '003', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '004', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '005', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '006', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '007', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '008', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '009', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '010', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '011', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '012', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '013', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '014', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '015', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '016', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '017', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '018', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '019', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '020', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '021', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '022', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '023', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '024', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '025', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '026', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '027', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '028', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '029', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '030', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '031', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '032', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '033', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '034', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '035', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '036', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '037', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '038', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '039', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '040', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '041', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '042', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '043', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '044', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '045', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '046', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '047', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '048', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '049', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '050', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '051', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '052', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '053', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '054', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '055', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '056', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '057', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '058', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '059', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '060', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '061', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '062', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '063', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '064', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '065', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '066', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '067', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '068', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '069', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '070', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '071', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '072', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '073', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '074', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '075', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '076', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '077', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '078', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '079', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '080', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '081', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '082', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '083', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '084', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '085', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '086', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '087', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '088', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '089', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '090', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '091', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '092', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '093', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '094', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '095', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '201', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '202', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '971', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '972', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '973', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '974', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '975', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '976', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '977', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '978', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '979', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '980', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '981', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '982', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '983', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '984', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '985', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '986', 'gdegauquier', now() );   </sql>
+        <sql> insert into t_department (code, created_by, created_date) values ( '987', 'gdegauquier', now() );   </sql>
+
+    </changeSet>
+
+</databaseChangeLog>
